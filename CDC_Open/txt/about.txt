@@ -1,0 +1,7 @@
+<li>The Canadian Health Clock is a digital clock with two categories: Deaths so far today (as of 12:00 midnight) and Deaths so far this year (as of January 1).</li>
+<li>It has a main clock that shows the total number of deaths from all causes, and numerous sub-clocks that shows deaths from the top 10 causes of death and all other cause.</li>
+<li>The blinking red dot shows that all clocks are working.</li>
+<li>It has an analogue version (that features a moving circle) and a digital version (table format)</li>
+<li>The moving circle for each analogue clock indicates one death when a circle is complete. The same moving circle applies to deaths so far today and this year.</li>
+<li>To find out how these numbers are generated please read <a href="#subheading4">How the numbers are generated</a>.</li>
+<li><a href=#calculators>Click Here</a> to go to (1) the online disease risk calculators to see your current risk of developing certain diseases and what you could do to reduce your risk based on population statistics (2) the online disease risk calculators to see your current risk of developing certain diseases and what you could do to reduce your risk based on population statistics.</li>

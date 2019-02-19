@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    <title>Demo Health Clock</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <!--[if gte IE 9 | !IE ]><!-->
+    <link rel="stylesheet" href="css/led.css">
+    <link rel="stylesheet" href="css/wet-boew.min.css">
+    <!--<![endif]-->
+    <link rel="stylesheet" href="css/theme.min.css">
+
+    <noscript>
+		<link rel="stylesheet" href="css/noscript.min.css" />
+	</noscript>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body vocab="http://schema.org/" typeof="WebPage">
+
+    <main role="main" property="mainContentOfPage" class="container">
+        <div class="row">
+            <div id="circle" class="col-md-1"></div>
+            <div class="col-md-11" id="title">
+            </div>
+        </div>
+        <div id="deathClockContainer">
+        </div>
+        <div class="clearfix"></div>
+        <div class="row pagedetails">
+            <div class="datemod col-xs-12 mrgn-tp-lg">
+                <dl id="wb-dtmd">
+                    <dt>Date modified: </dt>
+                    <dd>
+                        <time property="dateModified">2019-02-04</time>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </main>
+    <script src="js/moment.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://d3js.org/d3-queue.v3.min.js"></script>
+    <script src='js/deathClock.js'></script>
+    <script>
+        d3.csv('allCauseMortalityData.csv').then(function(data) {
+            deathClock(data);
+        })
+    </script>
+</body>
+
+</html>

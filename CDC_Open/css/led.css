@@ -1,0 +1,93 @@
+#circle {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    transform: translateY(130%);
+
+    background: red;
+
+    border-radius: 4rem;
+
+    opacity: 0.0;
+
+    -webkit-animation: pulsate 2000ms ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation: pulsate 2000ms ease-out;
+    -moz-animation-iteration-count: infinite;
+    -o-transition-animation: pulsate 2000ms ease-out;
+    -o-animation-iteration-count: infinite;
+    animation: pulsate 2000ms ease-out;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes pulsate {
+    0% {
+        opacity: 0.1;
+    }
+    40% {
+        opacity: 1.0;
+    }
+    60% {
+        opacity: 1.0;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+
+@-o-keyframes pulsate {
+    0% {
+        opacity: 0.1;
+    }
+    40% {
+        opacity: 1.0;
+    }
+    60% {
+        opacity: 1.0;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+
+@keyframes pulsate {
+    0% {
+        opacity: 0.1;
+    }
+    40% {
+        opacity: 1.0;
+    }
+    60% {
+        opacity: 1.0;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+
+/* -- Notches container -- */
+
+#notch-container {
+    position: absolute;
+    width: 1140px;
+    height: 500px
+}
+
+/* -- Hourly notch (thicker, but sparse) -- */
+
+.notch {
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background: black;
+    border-radius: 5px 5px 5px 5px;
+}
+
+/* -- Minute notch (thin) -- */
+
+.thin {
+    position: absolute;
+    width: 10px;
+    height: 1px;
+    border-top: 1px solid gray;
+}
